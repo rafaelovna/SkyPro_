@@ -40,8 +40,6 @@ public class Application {
     }
 
 
-
-
     static {
         try {
             employeeDao = new EmployeeDaoImpl(connection);
