@@ -8,6 +8,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Application {
+
+
     public static final String USER = "postgres";
     public static final String PASSWORD = "Safarian.8259";
     public static final String URL = "jdbc:postgresql://localhost:5432/skypro";

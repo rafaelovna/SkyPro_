@@ -2,12 +2,19 @@ package model;
 
 import java.util.Objects;
 
+
 public class Employee {
+
+
     private int id;
+
     private String first_name;
+
     private String last_name;
+
     private String gender;
     private int age;
+
     private City city_id;
 
     public Employee() {
@@ -70,8 +77,8 @@ public class Employee {
         this.age = age;
     }
 
-    public City getCity_id() {
-        return city_id;
+    public int getCity_id() {
+        return city_id.getCity_id();
     }
 
     public void setCity_id(City city_id) {

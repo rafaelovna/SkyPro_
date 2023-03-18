@@ -9,19 +9,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class EmployeeDaoImpl implements EmployeeDao {
-
-//    public final String USER = "postgres";
-//    public final String PASSWORD = "Safarian.8259";
-//    public final String URL = "jdbc:postgresql://localhost:5432/skypro";= DriverManager.getConnection(URL, USER, PASSWORD)
-
     public Connection connection;
-
-
     public EmployeeDaoImpl(Connection connection) throws SQLException{
         this.connection = connection;
     }
-
-
 
     @Override
     public void create(Employee employee) {
@@ -32,7 +23,7 @@ public class EmployeeDaoImpl implements EmployeeDao {
             statement.setString(2, employee.getLast_name());
             statement.setString(3, employee.getGender());
             statement.setInt(4, employee.getAge());
-            statement.setInt(5, employee.getCity_id().getCity_id());
+            statement.setInt(5, employee.getCity_id());
             statement.executeUpdate();
 
         } catch (SQLException e) {
